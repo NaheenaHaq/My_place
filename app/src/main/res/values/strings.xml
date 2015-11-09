@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My_place</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_place2">My_place2</string>
+</resources>
