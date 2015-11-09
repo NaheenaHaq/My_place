@@ -30,7 +30,7 @@ public class My_place extends AppCompatActivity {
         personItems.add(samsungS6);
         personItems.add(htc);
 
-        My_place2 nameAdapter =
+        final My_place2 nameAdapter =
                 new My_place2(this, personItems);
 
         listView.setAdapter(nameAdapter);
@@ -58,6 +58,8 @@ public class My_place extends AppCompatActivity {
                     n.setData(Uri.parse(url));
                     startActivity(n);
                 }
+                personItem.name = "Clicked";
+                nameAdapter.notifyDataSetChanged();
             }
         });
     }
